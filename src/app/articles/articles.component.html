@@ -1,0 +1,20 @@
+<div>
+  <h3>{{ "Latest articles" | uppercase }}</h3>
+
+  <div class="articles-list">
+    <!-- <mat-grid-list cols="3">
+      <mat-grid-tile *ngFor="let article of articles" rowHeight="fit"> -->
+        <!-- <button class="article" [class.selected]="article === selectedArticle" type="button" (click)="onSelect(article)">
+          <span>{{ article.id }}</span> - <span>{{ article.title }}</span>
+        </button>
+        <app-article-preview *ngIf="selectedArticle===article" [article]="selectedArticle">
+        </app-article-preview> -->
+        <div *ngFor="let article of articles">
+          <app-article-preview  [article]="article"></app-article-preview>
+      </div>
+      <!-- <mat-progress-bar [value]=""></mat-progress-bar> -->
+      <!-- </mat-grid-tile>
+    </mat-grid-list> -->
+  </div>
+</div>
+

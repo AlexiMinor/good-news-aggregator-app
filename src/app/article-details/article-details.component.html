@@ -1,0 +1,10 @@
+<div *ngIf="article">
+  <h2>{{article.title}}</h2>
+  <h5>{{article.date}}</h5>
+  <h5>{{article.rate}}</h5>
+
+  <div [innerHTML]="article.text"></div>
+
+
+  <a href="{{article.sourceUrl}}">Read on Source</a>
+</div>
